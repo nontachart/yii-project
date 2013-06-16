@@ -5,10 +5,6 @@ class DeshbordController extends Controller {
     public function actionIndex() {
         $user = User::model()->findByPk('1');
 //        foreach ($users as $user) {
-//            echo "=========<br>";
-//            print_r($user);
-//            echo "<br>=========<br>";
-
 
         $form = $this->beginWidget('CActiveForm', array(
             'id' => 'user-form',
